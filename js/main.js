@@ -9,6 +9,11 @@
   window.addEventListener('scroll', setScrolled, { passive: true });
   setScrolled();
 
+  const page = document.body.dataset.page;
+  if (menu && page) {
+    menu.querySelector(`[data-nav="${page}"]`)?.classList.add('is-active');
+  }
+
   if (toggle && menu) {
     toggle.addEventListener('click', () => {
       const open = menu.classList.toggle('is-open');
@@ -23,7 +28,7 @@
     });
 
     window.addEventListener('resize', () => {
-      if (window.innerWidth > 700 && menu.classList.contains('is-open')) {
+      if (window.innerWidth > 780 && menu.classList.contains('is-open')) {
         menu.classList.remove('is-open');
         toggle.setAttribute('aria-expanded', 'false');
       }

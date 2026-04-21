@@ -29,7 +29,7 @@
     />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body>
+  <body data-page="inicio">
     <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
 
     <header class="site-header" id="inicio">
@@ -48,11 +48,13 @@
           </button>
 
           <div class="nav__menu" id="nav-menu">
-            <a href="#servicios">Servicios</a>
-            <a href="#proceso">Proceso</a>
-            <a href="#tecnologias">Tecnologías</a>
-            <a href="privacy.html">Privacy</a>
-            <a href="support.html">Support</a>
+            <a data-nav="inicio" href="index.html">Inicio</a>
+            <a data-nav="servicios" href="services.html">Servicios</a>
+            <a data-nav="proceso" href="process.html">Proceso</a>
+            <a data-nav="tecnologias" href="technologies.html">Tecnologías</a>
+            <a data-nav="frases" href="#frases-title">Frases de Contacto</a>
+            <a data-nav="privacy" href="privacy.html">Privacy</a>
+            <a data-nav="support" href="support.html">Support</a>
             <a href="#contacto" class="btn btn--sm">Solicitar propuesta</a>
           </div>
         </div>
@@ -71,7 +73,7 @@
           </p>
           <div class="hero__cta">
             <a class="btn" href="#contacto">Hablemos de tu proyecto</a>
-            <a class="btn btn--ghost" href="#servicios">Ver servicios</a>
+            <a class="btn btn--ghost" href="services.html">Ver servicios</a>
           </div>
 
           <div class="hero__trust" aria-label="Empresas que confían en nosotros">
@@ -162,64 +164,7 @@
         </div>
       </section>
 
-      <section class="section" id="proceso">
-        <div class="container">
-          <p class="eyebrow">Proceso de trabajo</p>
-          <h2>Una ejecución ordenada, visible y orientada a resultados.</h2>
-          <ol class="process" aria-label="Etapas de proyecto">
-            <li><strong>Discovery</strong><span>Objetivos, alcance y prioridades de negocio.</span></li>
-            <li><strong>Diseño</strong><span>Wireframes, flujos y validación de experiencia.</span></li>
-            <li><strong>Desarrollo</strong><span>Construcción incremental con revisiones frecuentes.</span></li>
-            <li><strong>QA</strong><span>Pruebas funcionales y ajustes de calidad.</span></li>
-            <li><strong>Despliegue</strong><span>Salida a producción con checklist técnico.</span></li>
-            <li><strong>Soporte evolutivo</strong><span>Mejoras continuas según uso real.</span></li>
-          </ol>
-        </div>
-      </section>
-
-      <section class="section section--tint" id="tecnologias">
-        <div class="container">
-          <p class="eyebrow">Tecnologías</p>
-          <h2>Stack probado para productos rápidos y sostenibles.</h2>
-          <ul class="chips" aria-label="Tecnologías utilizadas">
-            <li>.NET</li>
-            <li>C#</li>
-            <li>Razor</li>
-            <li>SQL Server</li>
-            <li>iOS</li>
-            <li>Android</li>
-            <li>REST APIs</li>
-            <li>Azure-ready</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="section" id="casos">
-        <div class="container">
-          <p class="eyebrow">Casos de uso frecuentes</p>
-          <h2>Productos que resolvemos de forma recurrente.</h2>
-          <div class="cards cards--2">
-            <article class="card">
-              <h3>Apps móviles corporativas</h3>
-              <p>Operación de campo, equipos comerciales, supervisión y reportes en movilidad.</p>
-            </article>
-            <article class="card">
-              <h3>Sistemas internos y portales</h3>
-              <p>Flujos de aprobación, dashboards de operación y gestión documental empresarial.</p>
-            </article>
-            <article class="card">
-              <h3>Productos SaaS pequeños/medianos</h3>
-              <p>MVPs robustos para validar mercado con base técnica real y escalable.</p>
-            </article>
-            <article class="card">
-              <h3>Plataformas con integración de datos</h3>
-              <p>Conexión entre áreas mediante APIs y bases SQL con trazabilidad confiable.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section--app" aria-labelledby="frases-title">
+      <section class="section" id="frases">
         <div class="container app-highlight">
           <div>
             <p class="eyebrow">Producto del portafolio</p>
@@ -261,15 +206,15 @@
     <footer class="site-footer">
       <div class="container footer-grid">
         <div>
-          <a class="brand" href="index.html">SimplyApps</a>
-          <p>Desarrollo de software a medida para productos móviles y web empresariales.</p>
+          <a class="brand" href="index.html"><span class="brand__dot" aria-hidden="true"></span>SimplyApps</a>
+          <p>Software a medida para apps móviles, plataformas web y operaciones empresariales críticas.</p>
         </div>
         <div>
-          <h3>Navegación</h3>
+          <h3>Explorar</h3>
           <ul>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#tecnologias">Tecnologías</a></li>
-            <li><a href="#casos">Casos</a></li>
+            <li><a href="services.html">Servicios</a></li>
+            <li><a href="process.html">Proceso</a></li>
+            <li><a href="technologies.html">Tecnologías</a></li>
           </ul>
         </div>
         <div>
