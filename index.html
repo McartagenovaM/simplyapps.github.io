@@ -3,282 +3,307 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>SimplyApps | Desarrollo de Software</title>
+    <title>SimplyApps | Software a medida para empresas</title>
     <meta
       name="description"
-      content="SimplyApps crea aplicaciones móviles nativas para iOS y Android, y aplicaciones web con .NET Core, Razor, C#, y SQL Server."
+      content="SimplyApps diseña y desarrolla apps iOS y Android nativas, plataformas web empresariales y soluciones .NET escalables con enfoque en calidad, rapidez y mantenibilidad."
     />
-
+    <meta property="og:title" content="SimplyApps | Software a medida para empresas" />
+    <meta
+      property="og:description"
+      content="Construimos productos digitales robustos para equipos que necesitan lanzar con confianza."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://simplyapps.github.io/" />
+    <meta
+      property="og:image"
+      content="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1600&q=80"
+    />
+    <link rel="canonical" href="https://simplyapps.github.io/" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
-    <style>
-      :root {
-        --brand-primary: #4f46e5;
-        --brand-secondary: #06b6d4;
-        --brand-dark: #0f172a;
-        --brand-muted: #64748b;
-      }
-
-      html,
-      body {
-        font-family: 'Lato', sans-serif;
-        background: linear-gradient(180deg, #f8fafc 0%, #eef2ff 100%);
-        color: var(--brand-dark);
-        scroll-behavior: smooth;
-      }
-
-      .navbar {
-        backdrop-filter: blur(8px);
-        background: rgba(255, 255, 255, 0.8) !important;
-      }
-
-      .hero {
-        padding: 7rem 0 5rem;
-        background:
-          radial-gradient(circle at 10% 15%, rgba(79, 70, 229, 0.15), transparent 30%),
-          radial-gradient(circle at 85% 10%, rgba(6, 182, 212, 0.15), transparent 32%);
-      }
-
-      .hero-badge {
-        background-color: rgba(79, 70, 229, 0.1);
-        color: var(--brand-primary);
-        border: 1px solid rgba(79, 70, 229, 0.2);
-      }
-
-      .btn-brand {
-        background: linear-gradient(135deg, var(--brand-primary), var(--brand-secondary));
-        border: none;
-        color: #fff;
-      }
-
-      .btn-brand:hover {
-        opacity: 0.95;
-        color: #fff;
-      }
-
-      .feature-card,
-      .tech-card {
-        border: 1px solid #e2e8f0;
-        border-radius: 1rem;
-        background: #fff;
-        box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
-      }
-
-      .feature-card:hover,
-      .tech-card:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 18px 35px rgba(15, 23, 42, 0.12);
-      }
-
-      .icon-wrap {
-        width: 52px;
-        height: 52px;
-        border-radius: 12px;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        background: linear-gradient(135deg, rgba(79, 70, 229, 0.12), rgba(6, 182, 212, 0.12));
-        color: var(--brand-primary);
-      }
-
-      .section-title {
-        font-weight: 900;
-      }
-
-      .muted {
-        color: var(--brand-muted);
-      }
-
-      .cta {
-        background: var(--brand-dark);
-        color: #fff;
-        border-radius: 1.25rem;
-      }
-
-      footer {
-        color: var(--brand-muted);
-      }
-    </style>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg sticky-top">
-      <div class="container py-2">
-        <a class="navbar-brand fw-bold" href="#inicio">SimplyApps</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navMenu"
-          aria-controls="navMenu"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navMenu">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
-            <li class="nav-item"><a class="nav-link" href="#tecnologias">Tecnologías</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
 
-    <header id="inicio" class="hero">
-      <div class="container">
-        <div class="row align-items-center g-4">
-          <div class="col-lg-7">
-            <span class="badge rounded-pill hero-badge px-3 py-2 mb-3">
-              <i class="fa-solid fa-code me-2"></i> Software moderno para empresas
-            </span>
-            <h1 class="display-4 fw-bold section-title mb-3">
-              Impulsamos tu negocio con aplicaciones móviles y web a la medida.
-            </h1>
-            <p class="lead muted mb-4">
-              En <strong>SimplyApps</strong> desarrollamos soluciones robustas, escalables y rápidas de lanzar,
-              combinando experiencia en iOS, Android y ecosistema Microsoft.
-            </p>
-            <div class="d-flex flex-wrap gap-3">
-              <a href="#contacto" class="btn btn-brand btn-lg px-4">Solicitar propuesta</a>
-              <a href="#servicios" class="btn btn-outline-dark btn-lg px-4">Ver servicios</a>
-            </div>
-          </div>
-          <div class="col-lg-5">
-            <div class="p-4 tech-card">
-              <h2 class="h4 mb-3">Lo que construimos</h2>
-              <ul class="list-unstyled mb-0">
-                <li class="mb-3"><i class="fa-brands fa-apple me-2"></i> Apps nativas para iOS</li>
-                <li class="mb-3"><i class="fa-brands fa-android me-2"></i> Apps nativas para Android</li>
-                <li class="mb-3"><i class="fa-solid fa-globe me-2"></i> Aplicaciones web empresariales</li>
-                <li><i class="fa-solid fa-database me-2"></i> Integraciones con SQL Server</li>
-              </ul>
-            </div>
+    <header class="site-header" id="inicio">
+      <nav class="nav" aria-label="Navegación principal">
+        <div class="container nav__inner">
+          <a class="brand" href="index.html" aria-label="Ir al inicio de SimplyApps">
+            <span class="brand__dot" aria-hidden="true"></span>
+            SimplyApps
+          </a>
+
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+            <span class="sr-only">Abrir menú</span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </button>
+
+          <div class="nav__menu" id="nav-menu">
+            <a href="#servicios">Servicios</a>
+            <a href="#proceso">Proceso</a>
+            <a href="#tecnologias">Tecnologías</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="support.html">Support</a>
+            <a href="#contacto" class="btn btn--sm">Solicitar propuesta</a>
           </div>
         </div>
-      </div>
+      </nav>
+
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__carousel" aria-label="Escenas de colaboración y desarrollo">
+          <div class="hero__slide is-active" data-slide>
+            <img
+              src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1800&q=80"
+              alt="Equipo de producto revisando estrategias de software en una sala de reuniones"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="hero__slide" data-slide>
+            <img
+              src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1800&q=80"
+              alt="Pantalla de desarrollo con código y arquitectura de aplicación"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <div class="hero__slide" data-slide>
+            <img
+              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1800&q=80"
+              alt="Workspace moderno con laptop y entorno de diseño de producto digital"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <div class="hero__overlay" aria-hidden="true"></div>
+        </div>
+
+        <div class="container hero__content">
+          <p class="eyebrow">Boutique software studio · iOS · Android · .NET</p>
+          <h1 id="hero-title">Software corporativo que se lanza rápido y escala con tu negocio.</h1>
+          <p>
+            Diseñamos y desarrollamos apps móviles nativas, plataformas web empresariales y backends sólidos
+            para equipos que necesitan resultados concretos, no promesas.
+          </p>
+          <div class="hero__cta">
+            <a class="btn" href="#contacto">Hablemos de tu proyecto</a>
+            <a class="btn btn--ghost" href="#casos">Ver tipo de soluciones</a>
+          </div>
+          <div class="hero__controls" aria-label="Controles del carrusel">
+            <button class="hero__control" type="button" data-prev aria-label="Imagen anterior">‹</button>
+            <button class="hero__control" type="button" data-next aria-label="Imagen siguiente">›</button>
+          </div>
+          <p class="hero__credit">Imágenes libres: Unsplash (enlaces reemplazables en HTML).</p>
+        </div>
+      </section>
     </header>
 
-    <main>
-      <section id="servicios" class="py-5">
-        <div class="container py-4">
-          <div class="text-center mb-5">
-            <h2 class="section-title">Servicios principales</h2>
-            <p class="muted mb-0">Desarrollo end-to-end con enfoque en calidad y velocidad.</p>
-          </div>
-          <div class="row g-4">
-            <div class="col-md-6 col-lg-3">
-              <article class="feature-card h-100 p-4">
-                <span class="icon-wrap mb-3"><i class="fa-brands fa-apple fa-lg"></i></span>
-                <h3 class="h5">iOS Nativo</h3>
-                <p class="muted mb-0">Aplicaciones de alto rendimiento optimizadas para ecosistema Apple.</p>
-              </article>
-            </div>
-            <div class="col-md-6 col-lg-3">
-              <article class="feature-card h-100 p-4">
-                <span class="icon-wrap mb-3"><i class="fa-brands fa-android fa-lg"></i></span>
-                <h3 class="h5">Android Nativo</h3>
-                <p class="muted mb-0">Experiencias móviles sólidas para múltiples dispositivos Android.</p>
-              </article>
-            </div>
-            <div class="col-md-6 col-lg-3">
-              <article class="feature-card h-100 p-4">
-                <span class="icon-wrap mb-3"><i class="fa-solid fa-laptop-code fa-lg"></i></span>
-                <h3 class="h5">Web con .NET Core</h3>
-                <p class="muted mb-0">Portales y sistemas web usando .NET Core, Razor y C#.</p>
-              </article>
-            </div>
-            <div class="col-md-6 col-lg-3">
-              <article class="feature-card h-100 p-4">
-                <span class="icon-wrap mb-3"><i class="fa-solid fa-server fa-lg"></i></span>
-                <h3 class="h5">Datos en SQL Server</h3>
-                <p class="muted mb-0">Modelado y persistencia confiable para tus procesos críticos.</p>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="tecnologias" class="py-5">
-        <div class="container py-4">
-          <div class="row g-4 align-items-center">
-            <div class="col-lg-5">
-              <h2 class="section-title mb-3">Stack tecnológico</h2>
-              <p class="muted mb-0">
-                Implementamos arquitecturas limpias con herramientas modernas para entregar software
-                mantenible y preparado para crecer con tu empresa.
-              </p>
-            </div>
-            <div class="col-lg-7">
-              <div class="row g-3">
-                <div class="col-6 col-md-4">
-                  <div class="tech-card p-3 text-center fw-bold">.NET Core</div>
-                </div>
-                <div class="col-6 col-md-4">
-                  <div class="tech-card p-3 text-center fw-bold">Razor</div>
-                </div>
-                <div class="col-6 col-md-4">
-                  <div class="tech-card p-3 text-center fw-bold">C#</div>
-                </div>
-                <div class="col-6 col-md-4">
-                  <div class="tech-card p-3 text-center fw-bold">SQL Server</div>
-                </div>
-                <div class="col-6 col-md-4">
-                  <div class="tech-card p-3 text-center fw-bold">iOS</div>
-                </div>
-                <div class="col-6 col-md-4">
-                  <div class="tech-card p-3 text-center fw-bold">Android</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="contacto" class="py-5">
-        <div class="container py-4">
-          <div class="cta p-4 p-md-5 text-center">
-            <h2 class="fw-bold mb-3">¿Listo para construir tu próximo producto digital?</h2>
-            <p class="mb-4 text-white-50">
-              Hablemos de tu idea y transformémosla en una solución web o móvil lista para producción.
+    <main id="contenido">
+      <section class="section trust">
+        <div class="container grid grid--2">
+          <div>
+            <p class="eyebrow">Trusted value</p>
+            <h2>Construimos productos digitales listos para operación real.</h2>
+            <p>
+              En SimplyApps unimos visión de negocio con ejecución técnica para que tu producto llegue a
+              producción con arquitectura limpia, buena experiencia de usuario y una base mantenible.
             </p>
-            <a href="mailto:contacto@simplyapps.dev" class="btn btn-light btn-lg px-4">
-              <i class="fa-regular fa-envelope me-2"></i> contacto@simplyapps.dev
-            </a>
+          </div>
+          <ul class="stats" aria-label="Beneficios principales">
+            <li><strong>Time-to-market</strong><span>Iteraciones rápidas y priorización clara.</span></li>
+            <li><strong>Calidad técnica</strong><span>Buenas prácticas, QA y código sostenible.</span></li>
+            <li><strong>Escalabilidad</strong><span>Estructuras preparadas para crecimiento real.</span></li>
+            <li><strong>Colaboración</strong><span>Comunicación directa con enfoque comercial.</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" id="servicios">
+        <div class="container">
+          <p class="eyebrow">Servicios principales</p>
+          <h2>Capacidad full-cycle para móvil, web y backend empresarial.</h2>
+          <div class="cards cards--4">
+            <article class="card">
+              <h3>iOS nativo</h3>
+              <p>Apps en Swift con UX cuidada, performance consistente y publicación profesional.</p>
+            </article>
+            <article class="card">
+              <h3>Android nativo</h3>
+              <p>Aplicaciones robustas para distintos perfiles de dispositivos y entornos corporativos.</p>
+            </article>
+            <article class="card">
+              <h3>Web empresarial</h3>
+              <p>Portales y sistemas internos orientados a productividad, control y trazabilidad.</p>
+            </article>
+            <article class="card">
+              <h3>Backend y datos</h3>
+              <p>APIs, integraciones y modelado en SQL Server para procesos críticos y seguros.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--tint">
+        <div class="container">
+          <p class="eyebrow">Diferenciadores</p>
+          <h2>Diseño y arquitectura con mentalidad de producto.</h2>
+          <div class="cards cards--3">
+            <article class="card">
+              <h3>Arquitectura limpia</h3>
+              <p>Capas claras, patrones mantenibles y código entendible para equipos internos o externos.</p>
+            </article>
+            <article class="card">
+              <h3>UX orientada a adopción</h3>
+              <p>Interfaces claras para que usuarios reales trabajen mejor desde el primer día.</p>
+            </article>
+            <article class="card">
+              <h3>Integración Microsoft</h3>
+              <p>Especialización en .NET, C#, Razor y SQL Server con estándares de entorno enterprise.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="proceso">
+        <div class="container">
+          <p class="eyebrow">Proceso de trabajo</p>
+          <h2>Una ejecución ordenada, visible y orientada a resultados.</h2>
+          <ol class="process" aria-label="Etapas de proyecto">
+            <li><strong>Discovery</strong><span>Objetivos, alcance y prioridades de negocio.</span></li>
+            <li><strong>Diseño</strong><span>Wireframes, flujos y validación de experiencia.</span></li>
+            <li><strong>Desarrollo</strong><span>Construcción incremental con revisiones frecuentes.</span></li>
+            <li><strong>QA</strong><span>Pruebas funcionales y ajustes de calidad.</span></li>
+            <li><strong>Despliegue</strong><span>Salida a producción con checklist técnico.</span></li>
+            <li><strong>Soporte evolutivo</strong><span>Mejoras continuas según uso real.</span></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section section--tint" id="tecnologias">
+        <div class="container">
+          <p class="eyebrow">Tecnologías</p>
+          <h2>Stack probado para productos rápidos y sostenibles.</h2>
+          <ul class="chips" aria-label="Tecnologías utilizadas">
+            <li>.NET</li>
+            <li>C#</li>
+            <li>Razor</li>
+            <li>SQL Server</li>
+            <li>iOS</li>
+            <li>Android</li>
+            <li>REST APIs</li>
+            <li>Azure-ready</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" id="casos">
+        <div class="container">
+          <p class="eyebrow">Casos de uso frecuentes</p>
+          <h2>Productos que resolvemos de forma recurrente.</h2>
+          <div class="cards cards--2">
+            <article class="card">
+              <h3>Apps móviles corporativas</h3>
+              <p>Operación de campo, equipos comerciales, supervisión y reportes en movilidad.</p>
+            </article>
+            <article class="card">
+              <h3>Sistemas internos y portales</h3>
+              <p>Flujos de aprobación, dashboards de operación y gestión documental empresarial.</p>
+            </article>
+            <article class="card">
+              <h3>Productos SaaS pequeños/medianos</h3>
+              <p>MVPs robustos para validar mercado con base técnica real y escalable.</p>
+            </article>
+            <article class="card">
+              <h3>Plataformas con integración de datos</h3>
+              <p>Conexión entre áreas mediante APIs y bases SQL con trazabilidad confiable.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--app" aria-labelledby="frases-title">
+        <div class="container app-highlight">
+          <div>
+            <p class="eyebrow">Producto del portafolio</p>
+            <h2 id="frases-title">Frases de Contacto</h2>
+            <p>
+              Una app real de SimplyApps pensada para comunicación cotidiana, con enfoque humano,
+              configuración simple y privacidad-friendly.
+            </p>
+            <div class="hero__cta">
+              <a class="btn" href="support.html">Ver soporte</a>
+              <a class="btn btn--ghost" href="privacy.html">Leer privacidad</a>
+            </div>
+          </div>
+          <aside class="app-card" aria-label="Resumen de producto Frases de Contacto">
+            <h3>Lo que destaca</h3>
+            <ul>
+              <li>Interfaz clara y usable.</li>
+              <li>Enfoque en datos mínimos.</li>
+              <li>Soporte simple por correo.</li>
+              <li>Evolución basada en feedback.</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container cta-block" id="contacto">
+          <p class="eyebrow">Siguiente paso</p>
+          <h2>Tu producto merece una ejecución premium desde la primera iteración.</h2>
+          <p>Cuéntanos objetivos, tiempos y contexto técnico. Te respondemos con una propuesta clara.</p>
+          <div class="hero__cta">
+            <a class="btn" href="mailto:contacto@simplyapps.dev">contacto@simplyapps.dev</a>
+            <a class="btn btn--ghost" href="support.html">Ir a soporte</a>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="py-4">
-      <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
-        <span>© 2026 SimplyApps. Todos los derechos reservados.</span>
-        <span>Desarrollo de software moderno: móvil + web</span>
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand" href="index.html">SimplyApps</a>
+          <p>Desarrollo de software a medida para productos móviles y web empresariales.</p>
+        </div>
+        <div>
+          <h3>Navegación</h3>
+          <ul>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#tecnologias">Tecnologías</a></li>
+            <li><a href="#casos">Casos</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Frases de Contacto</h3>
+          <ul>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="terms.html">Terms</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contacto</h3>
+          <ul>
+            <li><a href="mailto:contacto@simplyapps.dev">contacto@simplyapps.dev</a></li>
+            <li>Respuesta estimada: 24-48h hábiles</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-copy">
+        <small>© 2026 SimplyApps. Todos los derechos reservados.</small>
       </div>
     </footer>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+    <script src="js/main.js" defer></script>
   </body>
 </html>
