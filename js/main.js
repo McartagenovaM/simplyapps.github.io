@@ -26,10 +26,13 @@
   const slides = Array.from(document.querySelectorAll('[data-slide]'));
   const prev = document.querySelector('[data-prev]');
   const next = document.querySelector('[data-next]');
+  const hero = document.querySelector('.hero');
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   if (slides.length > 1) {
     let index = 0;
     let timer;
+    let isVisible = true;
 
     const showSlide = (newIndex) => {
       slides[index].classList.remove('is-active');
@@ -39,8 +42,11 @@
 
     const startAuto = () => {
       clearInterval(timer);
-      timer = setInterval(() => showSlide(index + 1), 5800);
+      if (reduceMotion || !isVisible) return;
+      timer = setInterval(() => showSlide(index + 1), 6200);
     };
+
+    const stopAuto = () => clearInterval(timer);
 
     prev?.addEventListener('click', () => {
       showSlide(index - 1);
@@ -51,6 +57,26 @@
       showSlide(index + 1);
       startAuto();
     });
+
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden) {
+        stopAuto();
+      } else {
+        startAuto();
+      }
+    });
+
+    if (hero && 'IntersectionObserver' in window) {
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          isVisible = entry.isIntersecting;
+          if (isVisible) startAuto();
+          else stopAuto();
+        },
+        { threshold: 0.35 }
+      );
+      observer.observe(hero);
+    }
 
     startAuto();
   }
