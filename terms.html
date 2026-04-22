@@ -17,12 +17,90 @@
   </head>
   <body data-page="terms">
     <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
-    <header class="site-header"><div id="site-nav"></div><section class="page-hero"><div class="page-hero__content"><p class="hero__badge">Legal</p><h1>Términos de Uso</h1><p>Condiciones generales para el uso responsable de nuestros servicios digitales.</p></div></section></header>
+    <noscript>
+      <nav aria-label="Navegación esencial sin JavaScript">
+        <a href="index.html">Inicio</a> |
+        <a href="services.html">Servicios</a> |
+        <a href="support.html">Soporte</a> |
+        <a href="privacy.html">Privacidad</a> |
+        <a href="index.html#contacto">Contacto</a>
+      </nav>
+    </noscript>
+    <header class="site-header"><nav class="nav" aria-label="Navegación principal">
+        <div class="container nav__inner">
+          <a class="brand" href="index.html" aria-label="Ir al inicio de SimplyApps">
+            <img src="images/logoh.svg" alt="SimplyApps" />
+          </a>
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+            <span class="sr-only">Abrir menú</span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </button>
+          <div class="nav__menu" id="nav-menu">
+            <a data-nav="inicio" href="index.html">Inicio</a>
+            <a data-nav="servicios" href="services.html">Servicios</a>
+            <div class="nav__item nav__item--dropdown">
+              <button class="nav__dropdown-toggle" type="button" aria-expanded="false" aria-controls="nav-productos-menu">Productos</button>
+              <div class="nav__dropdown" id="nav-productos-menu">
+                <a data-nav="producto-frases" href="frases-de-contacto.html">Frases de Contacto</a>
+              </div>
+            </div>
+            <a data-nav="proceso" href="process.html">Proceso</a>
+            <a data-nav="tecnologias" href="technologies.html">Tecnologías</a>
+            <a data-nav="privacy" href="privacy.html">Privacidad</a>
+            <a data-nav="support" href="support.html">Soporte</a>
+            <a class="btn btn--sm" href="index.html#contacto">Solicitar propuesta</a>
+          </div>
+        </div>
+      </nav><section class="page-hero"><div class="page-hero__content"><p class="hero__badge">Legal</p><h1>Términos de Uso</h1><p>Condiciones generales para el uso responsable de nuestros servicios digitales.</p></div></section></header>
     <main id="contenido">
       <section class="section"><div class="container legal-grid"><article class="card legal-card"><h2>Uso adecuado</h2><p>El usuario se compromete a utilizar el servicio de manera lícita y respetuosa con terceros.</p></article><article class="card legal-card"><h2>Disponibilidad</h2><p>Podemos ejecutar mantenimiento y mejoras para preservar la continuidad y seguridad operativa.</p></article><article class="card legal-card"><h2>Responsabilidad</h2><p>Nos esforzamos por ofrecer estabilidad y calidad, sin garantía de disponibilidad ininterrumpida.</p></article><article class="card legal-card"><h2>Propiedad intelectual</h2><p>El contenido del sitio y sus materiales están protegidos y no pueden reproducirse sin autorización.</p></article><article class="card legal-card"><h2>Contacto legal</h2><p>Para consultas sobre estos términos, escribe a <a href="mailto:simply.apps.ec@gmail.com">simply.apps.ec@gmail.com</a>.</p></article></div></section>
       <section class="section section--soft"><div class="container"><div class="card legal-footer"><p><strong>Última actualización:</strong> 22 de abril de 2026.</p></div></div></section>
     </main>
-    <div id="site-footer"></div>
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="footer-brand" href="index.html">
+            <img src="images/LogoSquare.svg" alt="Logo SimplyApps" />
+          </a>
+          <p>Diseñamos software a la medida para empresas que necesitan productos digitales sólidos, rápidos de lanzar y preparados para crecer.</p>
+        </div>
+        <div>
+          <h3>Navegación</h3>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="frases-de-contacto.html">Productos</a></li>
+            <li><a href="support.html">Soporte</a></li>
+            <li><a href="privacy.html">Privacidad</a></li>
+            <li><a href="terms.html">Términos</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Soluciones</h3>
+          <ul>
+            <li>Apps iOS nativas</li>
+            <li>Apps Android nativas</li>
+            <li>Aplicaciones web empresariales</li>
+            <li>Backends y APIs</li>
+            <li>Integraciones con SQL Server</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contacto</h3>
+          <ul>
+            <li>Quito, Ecuador</li>
+            <li><a href="tel:+593992572738">+593992572738</a></li>
+            <li><a href="mailto:simply.apps.ec@gmail.com">simply.apps.ec@gmail.com</a></li>
+            <li>Soporte comercial y técnico</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-copy">
+        <small>© 2026 Simply Apps. Diseñado con cuidado para experiencias móviles simples y útiles.</small>
+        <small>Developer identity: soporte y privacidad activos para apps iOS publicadas.</small>
+      </div>
+    </footer>
     <script src="js/main.js" defer></script>
   </body>
 </html>

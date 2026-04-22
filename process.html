@@ -23,8 +23,44 @@
   </head>
   <body data-page="proceso">
     <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+    <noscript>
+      <nav aria-label="Navegación esencial sin JavaScript">
+        <a href="index.html">Inicio</a> |
+        <a href="services.html">Servicios</a> |
+        <a href="support.html">Soporte</a> |
+        <a href="privacy.html">Privacidad</a> |
+        <a href="index.html#contacto">Contacto</a>
+      </nav>
+    </noscript>
     <header class="site-header">
-      <div id="site-nav"></div>
+      <nav class="nav" aria-label="Navegación principal">
+        <div class="container nav__inner">
+          <a class="brand" href="index.html" aria-label="Ir al inicio de SimplyApps">
+            <img src="images/logoh.svg" alt="SimplyApps" />
+          </a>
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+            <span class="sr-only">Abrir menú</span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </button>
+          <div class="nav__menu" id="nav-menu">
+            <a data-nav="inicio" href="index.html">Inicio</a>
+            <a data-nav="servicios" href="services.html">Servicios</a>
+            <div class="nav__item nav__item--dropdown">
+              <button class="nav__dropdown-toggle" type="button" aria-expanded="false" aria-controls="nav-productos-menu">Productos</button>
+              <div class="nav__dropdown" id="nav-productos-menu">
+                <a data-nav="producto-frases" href="frases-de-contacto.html">Frases de Contacto</a>
+              </div>
+            </div>
+            <a data-nav="proceso" href="process.html">Proceso</a>
+            <a data-nav="tecnologias" href="technologies.html">Tecnologías</a>
+            <a data-nav="privacy" href="privacy.html">Privacidad</a>
+            <a data-nav="support" href="support.html">Soporte</a>
+            <a class="btn btn--sm" href="index.html#contacto">Solicitar propuesta</a>
+          </div>
+        </div>
+      </nav>
       <section class="page-hero" aria-labelledby="process-title">
         <div class="page-hero__content"><p class="hero__badge">Proceso</p><h1 id="process-title">Nuestro proceso de trabajo</h1><p>Convertimos ideas en productos digitales sólidos con una ruta clara, medible y sin improvisación.</p></div>
       </section>
@@ -33,7 +69,49 @@
       <section class="section"><div class="container"><p class="eyebrow">Etapas</p><h2>Un flujo diseñado para minimizar riesgo y maximizar velocidad.</h2><ol class="process"><li><strong>01 Discovery</strong><span>Objetivos, alcance, mapa de riesgos y métricas de éxito.</span></li><li><strong>02 UX/UI</strong><span>Definición de journeys, wireframes y sistema visual.</span></li><li><strong>03 Arquitectura</strong><span>Stack, diseño de datos y decisiones técnicas sostenibles.</span></li><li><strong>04 Desarrollo</strong><span>Iteraciones cortas con demos de progreso constantes.</span></li><li><strong>05 QA y hardening</strong><span>Pruebas funcionales, performance y validación operativa.</span></li><li><strong>06 Lanzamiento + evolución</strong><span>Salida controlada y plan de mejora continua.</span></li></ol></div></section>
       <section class="section section--soft"><div class="container"><p class="eyebrow">Gobernanza</p><h2>Visibilidad ejecutiva para negocio y tecnología.</h2><div class="cards cards--3"><article class="card"><h3>Comunicación semanal</h3><p>Reporte de hitos, bloqueos y decisiones de producto.</p></article><article class="card"><h3>Gestión de riesgos</h3><p>Seguimiento de alcance, calidad, costo y tiempo.</p></article><article class="card"><h3>Documentación viva</h3><p>Contexto técnico y funcional siempre actualizado.</p></article></div></div></section>
     </main>
-    <div id="site-footer"></div>
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="footer-brand" href="index.html">
+            <img src="images/LogoSquare.svg" alt="Logo SimplyApps" />
+          </a>
+          <p>Diseñamos software a la medida para empresas que necesitan productos digitales sólidos, rápidos de lanzar y preparados para crecer.</p>
+        </div>
+        <div>
+          <h3>Navegación</h3>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="frases-de-contacto.html">Productos</a></li>
+            <li><a href="support.html">Soporte</a></li>
+            <li><a href="privacy.html">Privacidad</a></li>
+            <li><a href="terms.html">Términos</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Soluciones</h3>
+          <ul>
+            <li>Apps iOS nativas</li>
+            <li>Apps Android nativas</li>
+            <li>Aplicaciones web empresariales</li>
+            <li>Backends y APIs</li>
+            <li>Integraciones con SQL Server</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contacto</h3>
+          <ul>
+            <li>Quito, Ecuador</li>
+            <li><a href="tel:+593992572738">+593992572738</a></li>
+            <li><a href="mailto:simply.apps.ec@gmail.com">simply.apps.ec@gmail.com</a></li>
+            <li>Soporte comercial y técnico</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-copy">
+        <small>© 2026 Simply Apps. Diseñado con cuidado para experiencias móviles simples y útiles.</small>
+        <small>Developer identity: soporte y privacidad activos para apps iOS publicadas.</small>
+      </div>
+    </footer>
     <script src="js/main.js" defer></script>
   </body>
 </html>

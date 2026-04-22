@@ -17,12 +17,90 @@
   </head>
   <body data-page="tecnologias">
     <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
-    <header class="site-header"><div id="site-nav"></div><section class="page-hero" aria-labelledby="technologies-title"><div class="page-hero__content"><p class="hero__badge">Tecnologías</p><h1 id="technologies-title">Stack corporativo para productos que escalan.</h1><p>Tomamos decisiones tecnológicas pragmáticas para acelerar entregas y reducir deuda técnica.</p></div></section></header>
+    <noscript>
+      <nav aria-label="Navegación esencial sin JavaScript">
+        <a href="index.html">Inicio</a> |
+        <a href="services.html">Servicios</a> |
+        <a href="support.html">Soporte</a> |
+        <a href="privacy.html">Privacidad</a> |
+        <a href="index.html#contacto">Contacto</a>
+      </nav>
+    </noscript>
+    <header class="site-header"><nav class="nav" aria-label="Navegación principal">
+        <div class="container nav__inner">
+          <a class="brand" href="index.html" aria-label="Ir al inicio de SimplyApps">
+            <img src="images/logoh.svg" alt="SimplyApps" />
+          </a>
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+            <span class="sr-only">Abrir menú</span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </button>
+          <div class="nav__menu" id="nav-menu">
+            <a data-nav="inicio" href="index.html">Inicio</a>
+            <a data-nav="servicios" href="services.html">Servicios</a>
+            <div class="nav__item nav__item--dropdown">
+              <button class="nav__dropdown-toggle" type="button" aria-expanded="false" aria-controls="nav-productos-menu">Productos</button>
+              <div class="nav__dropdown" id="nav-productos-menu">
+                <a data-nav="producto-frases" href="frases-de-contacto.html">Frases de Contacto</a>
+              </div>
+            </div>
+            <a data-nav="proceso" href="process.html">Proceso</a>
+            <a data-nav="tecnologias" href="technologies.html">Tecnologías</a>
+            <a data-nav="privacy" href="privacy.html">Privacidad</a>
+            <a data-nav="support" href="support.html">Soporte</a>
+            <a class="btn btn--sm" href="index.html#contacto">Solicitar propuesta</a>
+          </div>
+        </div>
+      </nav><section class="page-hero" aria-labelledby="technologies-title"><div class="page-hero__content"><p class="hero__badge">Tecnologías</p><h1 id="technologies-title">Stack corporativo para productos que escalan.</h1><p>Tomamos decisiones tecnológicas pragmáticas para acelerar entregas y reducir deuda técnica.</p></div></section></header>
     <main id="contenido">
       <section class="section"><div class="container"><p class="eyebrow">Especialización</p><h2>Base técnica sólida para entornos críticos.</h2><div class="cards cards--4"><article class="card"><h3>.NET / C#</h3><p>Backends enterprise robustos y mantenibles.</p></article><article class="card"><h3>SQL Server</h3><p>Datos confiables, trazables y optimizados.</p></article><article class="card"><h3>Razor / Web</h3><p>Aplicaciones empresariales con alta productividad.</p></article><article class="card"><h3>APIs REST</h3><p>Integraciones seguras entre plataformas y canales.</p></article></div></div></section>
       <section class="section section--soft"><div class="container"><p class="eyebrow">Capacidades adicionales</p><h2>Tecnología alineada con resultados de negocio.</h2><ul class="chips"><li>iOS (Swift)</li><li>Android (Kotlin)</li><li>Azure-ready</li><li>CI/CD</li><li>Testing funcional</li><li>Seguridad por capas</li><li>Observabilidad</li><li>Arquitectura limpia</li></ul></div></section>
     </main>
-    <div id="site-footer"></div>
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="footer-brand" href="index.html">
+            <img src="images/LogoSquare.svg" alt="Logo SimplyApps" />
+          </a>
+          <p>Diseñamos software a la medida para empresas que necesitan productos digitales sólidos, rápidos de lanzar y preparados para crecer.</p>
+        </div>
+        <div>
+          <h3>Navegación</h3>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="frases-de-contacto.html">Productos</a></li>
+            <li><a href="support.html">Soporte</a></li>
+            <li><a href="privacy.html">Privacidad</a></li>
+            <li><a href="terms.html">Términos</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Soluciones</h3>
+          <ul>
+            <li>Apps iOS nativas</li>
+            <li>Apps Android nativas</li>
+            <li>Aplicaciones web empresariales</li>
+            <li>Backends y APIs</li>
+            <li>Integraciones con SQL Server</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contacto</h3>
+          <ul>
+            <li>Quito, Ecuador</li>
+            <li><a href="tel:+593992572738">+593992572738</a></li>
+            <li><a href="mailto:simply.apps.ec@gmail.com">simply.apps.ec@gmail.com</a></li>
+            <li>Soporte comercial y técnico</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-copy">
+        <small>© 2026 Simply Apps. Diseñado con cuidado para experiencias móviles simples y útiles.</small>
+        <small>Developer identity: soporte y privacidad activos para apps iOS publicadas.</small>
+      </div>
+    </footer>
     <script src="js/main.js" defer></script>
   </body>
 </html>
