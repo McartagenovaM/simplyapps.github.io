@@ -215,11 +215,10 @@ h1, h2, h3 {
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 1.15rem;
-  margin-bottom: 1.3rem;
+  gap: .65rem;
+  margin-bottom: .95rem;
 }
 .footer-brand img { width: clamp(220px, 23vw, 320px); height: auto; display: block; }
-.footer-brand strong { font-family: 'Manrope', sans-serif; font-size: clamp(1.45rem, 2.3vw, 1.9rem); letter-spacing: -.02em; color: #fff; }
 .site-footer h3 {
   margin: .15rem 0 1rem;
   color: #fff;
