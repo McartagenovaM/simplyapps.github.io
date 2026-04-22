@@ -367,6 +367,15 @@ h1, h2, h3 {
   }
   .nav__menu.is-open { display: flex; }
   .nav__menu a:not(.btn), .nav__dropdown-toggle { color: var(--color-primary); text-align: left; }
+  .nav__menu a:not(.btn):focus-visible,
+  .nav__dropdown-toggle:focus-visible,
+  .nav__dropdown a:focus-visible {
+    outline: 3px solid var(--color-accent);
+    outline-offset: 2px;
+    background: rgba(241, 144, 67, .16);
+    border-radius: 10px;
+    color: #0f3550 !important;
+  }
   .nav__item--dropdown { display: grid; gap: .45rem; }
   .nav__dropdown { position: static; min-width: 100%; box-shadow: none; padding: .4rem; background: #f6f9ff; }
   .nav__item--dropdown:hover .nav__dropdown { display: none; }

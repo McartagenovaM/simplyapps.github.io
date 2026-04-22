@@ -30,15 +30,25 @@
 
   if (!toggle || !menu) return;
 
-  const closeMenu = () => {
+  const getMenuFocusable = () =>
+    menu.querySelector('a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])');
+
+  const closeMenu = ({ returnFocus = true } = {}) => {
     menu.classList.remove('is-open');
     toggle.setAttribute('aria-expanded', 'false');
     closeProductsMenu();
+    if (returnFocus) toggle.focus();
   };
 
   toggle.addEventListener('click', () => {
     const open = menu.classList.toggle('is-open');
     toggle.setAttribute('aria-expanded', String(open));
+    if (open) {
+      getMenuFocusable()?.focus();
+      return;
+    }
+    closeProductsMenu();
+    toggle.focus();
   });
 
   menu.querySelectorAll('a').forEach((link) => {
@@ -57,7 +67,26 @@
     closeProductsMenu();
   });
 
+  document.addEventListener('focusin', (event) => {
+    if (!productsItem?.classList.contains('is-open')) return;
+    if (productsItem.contains(event.target)) return;
+    closeProductsMenu();
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key !== 'Escape') return;
+
+    if (productsItem?.classList.contains('is-open')) {
+      closeProductsMenu();
+      productsToggle?.focus();
+    }
+
+    if (menu.classList.contains('is-open')) {
+      closeMenu();
+    }
+  });
+
   window.addEventListener('resize', () => {
-    if (window.innerWidth > 780) closeMenu();
+    if (window.innerWidth > 780) closeMenu({ returnFocus: false });
   });
 })();
